@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*POUR STYLISE L'EN TETE*/
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/*POUR STYLISE LE BLOQUE 1*/
+header .bloque1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque1 .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .bloque1 .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+
+header .bloque1 .logo h1 {
+    color: rgb(155, 33, 33);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+/*POUR STYLISE LE BLOQUE 2*/
+header .bloque2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque2 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+header .bloque2 a:hover {
+    color: rgb(155, 33, 33);
+    border-bottom: 1px solid rgb(155, 33, 33);
+    font-weight: 500;
+}
+
+.haut{
+    background-image: url(./imqge-glam/IMG-20250603-WA0053.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 50px;
+    padding: 20% 40%;
+}
+
+.bas{
+    background-image: url(./imqge-glam/pantalon.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 50px;
+    padding: 20% 40%;
+    margin-top: 10%;
+}
+
+.sac{
+    background-image: url(./imqge-glam/sac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-size: 50px;
+    padding: 20% 40%;
+    margin-top: 10%;
+}
+
+.elements{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.carte{
+    width: 400px;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+    gap: 10px;
+    padding: 50px 20px;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px black;
+}
+
+.carte img{
+    width: 200px;
+    height: 200px;
+    border-radius: 2em;
+}
+
+.mots{
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mots p,h2{
+    margin: 10px 0;
+}
+
+.mots button{
+    width: 120px;
+    background-color: cadetblue;
+    height: 40px;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.mots button:hover{
+    background-color: rgb(126, 167, 161);
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .bloque1 {
+        gap: 10px;
+    }
+
+    header .bloque1 .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header .bloque1 .logo h1 {
+        font-size: 1em;
+    }
+
+    header .bloque2 {
+        display: none;
+    }
+
+    .haut{
+        height: 300px;
+        padding: 20%;
+    }
+
+    .bas{
+        height: 300px;
+        padding: 20% 27%;
+    }
+
+    .sac{
+        height: 300px;
+        padding: 20%;
+    }
+
+    .elements{
+        padding: 0 5px;
+    }
+}

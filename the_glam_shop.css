@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*POUR STYLISE L'EN TETE*/
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/*POUR STYLISE LE BLOQUE 1*/
+header .bloque1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque1 .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .bloque1 .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+
+header .bloque1 .logo h1 {
+    color: rgb(155, 33, 33);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+/*POUR STYLISE LE BLOQUE 2*/
+header .bloque2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque2 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+header .bloque2 a:hover {
+    color: rgb(155, 33, 33);
+    border-bottom: 1px solid rgb(155, 33, 33);
+    font-weight: 500;
+}
+
+.presentation{
+    background-image: url(./imqge-glam/sac.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    padding: 18% 15%;
+    color: ghostwhite;
+}
+
+.presentation p{
+    margin-top: 30px;
+}
+
+.titre{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.articles{
+    padding: 80px 7%;
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: rgba(59, 59, 59, 0.863);
+    padding: 5% 20px;
+    text-align: center;
+    border-radius: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px black;
+}
+
+.card:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card a{
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.card a h2:hover{
+    border-bottom: 2px solid ghostwhite;
+}
+
+.voir{
+    width: 300px;
+    height: 400px ;
+    margin-top: 70px;
+    border-radius: 2em;
+    
+}
+
+@media screen and (max-width: 450px) {
+
+    header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .bloque1 {
+        gap: 10px;
+    }
+
+    header .bloque1 .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header .bloque1 .logo h1 {
+        font-size: 1em;
+    }
+
+    header .bloque2 {
+        display: none;
+    }
+
+    .presentation{
+        padding: 20% 10px;
+        height: 400px;
+        margin: 0;
+    }
+
+    .titre{
+        font-size: 20px;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    .articles{
+        padding: 80px 30px;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .card{
+        width: 350px;
+        height: 400px;
+    }
+
+    .card a h2{
+        margin-top: 20px;
+    }
+
+    .voir{
+        width: 250px;
+        height: 250px;
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+}

@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image: url(./imqge-glam/aller.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+/*POUR STYLISE L'EN TETE*/
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/*POUR STYLISE LE BLOQUE 1*/
+header .bloque1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque1 .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .bloque1 .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+
+header .bloque1 .logo h1 {
+    color: rgb(155, 33, 33);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+/*POUR STYLISE LE BLOQUE 2*/
+header .bloque2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque2 a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+header .bloque2 a:hover {
+    color: rgb(155, 33, 33);
+    border-bottom: 1px solid rgb(155, 33, 33);
+    font-weight: 500;
+}
+
+.pres{
+    margin: 80px 30%;
+    border-bottom: 1px solid black;
+    width: 500px;
+}
+
+.pres p{
+    margin: 20px;
+}
+
+.bout{
+    margin: 50px 20px;
+    justify-content: center;
+}
+
+.wom h2{
+    text-align: center;
+    margin: 40px 0;
+    text-decoration: underline;
+    color: brown;
+}
+
+.wom p{
+    width: 700px;
+    margin: 0 25%;
+    text-align: center;
+}
+
+.fem{
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.fem h2{
+    font-size: 30px;
+    margin-top: 10%;
+    margin-bottom: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-bottom: 1px solid black;
+}
+
+.card{
+    display: flex;
+    gap: 80px;
+    height: 500px;
+    margin: 50px 10px;
+    width: 100%;
+}
+
+.card img{
+    border-radius: 2em;
+    width: 40%;
+    height: 400px;
+}
+.contenu{
+    margin-top: 30px;
+    font-size: 30px;
+    height: 300px;
+}
+
+.contenu h3{
+    color: brown;
+    text-decoration: underline;
+}
+
+.contenu p{
+    margin: 80px 20px;
+    font-size: 1rem;
+}
+
+.contenu button{
+    width: 150px;
+    height: 50px;
+    background-color: brown;
+    border: none;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.contenu button:hover{
+    background-color: rgb(218, 96, 96);
+    color: white;
+}
+
+@media screen and (max-width: 450px) {
+    header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .bloque1 {
+        gap: 10px;
+    }
+
+    header .bloque1 .logo img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    header .bloque1 .logo h1 {
+        font-size: 1em;
+    }
+
+    header .bloque2 {
+        display: none;
+    }
+
+    .pres{
+        margin: 80px 10px;
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .bout{
+        margin: 50px 10px;
+    }
+
+    .wom p{
+        width: 300px;
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .fem{
+        margin: 50px 0;
+        justify-content: center;
+    }
+
+    .fem h2{
+        font-size: 1rem;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 500px;
+        margin: 90px 10px;
+        width: 100%;
+    }
+
+    .contenu p{
+        margin: 30px 5px;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
