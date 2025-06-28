@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/*POUR STYLISE L'EN TETE*/
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+/*POUR STYLISE LE BLOQUE 1*/
+header .bloque1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .bloque1 .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .bloque1 .logo img {
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+}
+
+header .bloque1 .logo h1 {
+    color: rgb(155, 33, 33);
+    font-size: 2em;
+    font-weight: 900;
+}
+
+header i{
+    font-size: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.menu img {
+    width: 1.5em;
+}
+
+/*POUR STYLISE LA NAV*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: -1px;
+}
+
+nav a:hover {
+    color: rgb(155, 33, 33);
+    border-bottom: 1px solid rgb(155, 33, 33);
+    font-weight: 500;
+}
+
+
+/* POUR LE CORP */
+
+.presentation{
+    width: 100%;
+    height: 600px;
+    background-image: url(./imqge-glam/sac.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 18% 15%;
+    color: ghostwhite;
+}
+
+.presentation p{
+    margin-top: 30px;
+}
+
+.titre{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+    text-decoration: underline;
+}
+
+.articles{
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    background-color: rgba(59, 59, 59, 0.863);
+    padding: 5% 20px;
+    text-align: center;
+    border-radius: 2em;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px black;
+}
+
+.card:hover{
+    transform: translateY(-30px);
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card a{
+    color: ghostwhite;
+    text-decoration: none;
+}
+
+.genre {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.voir{
+    width: 300px;
+    height: 400px ;
+    margin-top: 40px;
+    border-radius: 2em;
+    
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        width: 100%;
+        padding: 10px;
+    }
+
+    header .bloque1 .logo img {
+        width: 1.3em;
+        height: 1.3em;
+    }
+
+    header .bloque1 .logo h1 {
+        font-size: 1.4em;
+    }
+
+    nav .liste {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    nav .liste.mobile-menu {
+        margin-left: 0;
+    }
+
+    nav .liste ul {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    nav .liste ul a {
+        font-size: 1.8em;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    .presentation {
+        width: 100%;
+        height: 80vh;
+    }
+
+    .titre {
+        font-size: 25px;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+    
+}
+
