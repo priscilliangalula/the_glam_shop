@@ -39,6 +39,18 @@ header .bloque1 .logo h1 {
     font-weight: 900;
 }
 
+header i{
+    font-size: 2rem;
+}
+
+.menu {
+    display: none;
+}
+
+.menu img {
+    width: 1.5em;
+}
+
 /*POUR STYLISE LA NAV*/
 
 nav ul {
@@ -61,6 +73,8 @@ nav a:hover {
     font-weight: 500;
 }
 
+
+/* POUR LE CORP */
 
 .presentation{
     width: 100%;
@@ -143,8 +157,39 @@ nav a:hover {
         font-size: 1.4em;
     }
 
-    nav {
-        display: none;
+    nav .liste {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.20);
+        backdrop-filter: blur(8px);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    nav .liste.mobile-menu {
+        margin-left: 0;
+    }
+
+    nav .liste ul {
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    nav .liste ul a {
+        font-size: 1.8em;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
     }
 
     .presentation {
