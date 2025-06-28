@@ -45,21 +45,23 @@ header .bloque1 .logo h1 {
     font-weight: 900;
 }
 
-/*POUR STYLISE LE BLOQUE 2*/
-header .bloque2 {
+/*POUR STYLISE LA NAV*/
+
+nav ul {
+    list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-header .bloque2 a {
+nav a {
     color: black;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
 }
 
-header .bloque2 a:hover {
+nav a:hover {
     color: rgb(155, 33, 33);
     border-bottom: 1px solid rgb(155, 33, 33);
     font-weight: 500;
@@ -150,26 +152,23 @@ header .bloque2 a:hover {
     color: white;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+    
     header {
         width: 100%;
         padding: 10px;
     }
 
-    header .bloque1 {
-        gap: 10px;
-    }
-
     header .bloque1 .logo img {
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.3em;
+        height: 1.3em;
     }
 
     header .bloque1 .logo h1 {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
-    header .bloque2 {
+    nav {
         display: none;
     }
 

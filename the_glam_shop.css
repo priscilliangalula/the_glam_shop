@@ -39,31 +39,35 @@ header .bloque1 .logo h1 {
     font-weight: 900;
 }
 
-/*POUR STYLISE LE BLOQUE 2*/
-header .bloque2 {
+/*POUR STYLISE LA NAV*/
+
+nav ul {
+    list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-header .bloque2 a {
+nav a {
     color: black;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
 }
 
-header .bloque2 a:hover {
+nav a:hover {
     color: rgb(155, 33, 33);
     border-bottom: 1px solid rgb(155, 33, 33);
     font-weight: 500;
 }
 
+
 .presentation{
+    width: 100%;
+    height: 600px;
     background-image: url(./imqge-glam/sac.jpg);
     background-size: cover;
     background-position: center;
-    height: 600px;
     padding: 18% 15%;
     color: ghostwhite;
 }
@@ -82,6 +86,7 @@ header .bloque2 a:hover {
 .articles{
     padding: 80px 7%;
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
@@ -106,77 +111,54 @@ header .bloque2 a:hover {
     text-decoration: none;
 }
 
-.card a h2:hover{
-    border-bottom: 2px solid ghostwhite;
+.genre {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .voir{
     width: 300px;
     height: 400px ;
-    margin-top: 70px;
+    margin-top: 40px;
     border-radius: 2em;
     
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
     header {
         width: 100%;
         padding: 10px;
     }
 
-    header .bloque1 {
-        gap: 10px;
-    }
-
     header .bloque1 .logo img {
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.3em;
+        height: 1.3em;
     }
 
     header .bloque1 .logo h1 {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
-    header .bloque2 {
+    nav {
         display: none;
     }
 
-    .presentation{
-        padding: 20% 10px;
-        height: 400px;
-        margin: 0;
+    .presentation {
+        width: 100%;
+        height: 80vh;
     }
 
-    .titre{
-        font-size: 20px;
-        justify-content: center;
-        margin: 50px 0;
+    .titre {
+        font-size: 25px;
     }
 
-    .articles{
-        padding: 80px 30px;
+    .articles {
         flex-direction: column;
-        gap: 40px;
     }
     
-    .card{
-        width: 350px;
-        height: 400px;
-    }
-
-    .card a h2{
-        margin-top: 20px;
-    }
-
-    .voir{
-        width: 250px;
-        height: 250px;
-        margin-top: 40px;
-    }
-
 }
 
-@media screen and (max-width: 450px) {
-
-}

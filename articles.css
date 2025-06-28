@@ -38,21 +38,23 @@ header .bloque1 .logo h1 {
     font-weight: 900;
 }
 
-/*POUR STYLISE LE BLOQUE 2*/
-header .bloque2 {
+/*POUR STYLISE LA NAV*/
+
+nav ul {
+    list-style: none;
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-header .bloque2 a {
+nav a {
     color: black;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     letter-spacing: -1px;
 }
 
-header .bloque2 a:hover {
+nav a:hover {
     color: rgb(155, 33, 33);
     border-bottom: 1px solid rgb(155, 33, 33);
     font-weight: 500;
@@ -89,6 +91,8 @@ header .bloque2 a:hover {
 
 .elements{
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
@@ -138,45 +142,49 @@ header .bloque2 a:hover {
     color: white;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
+
     header {
         width: 100%;
         padding: 10px;
     }
 
-    header .bloque1 {
-        gap: 10px;
-    }
-
     header .bloque1 .logo img {
-        width: 1.5em;
-        height: 1.5em;
+        width: 1.3em;
+        height: 1.3em;
     }
 
     header .bloque1 .logo h1 {
-        font-size: 1em;
+        font-size: 1.4em;
     }
 
-    header .bloque2 {
+    nav {
         display: none;
     }
 
-    .haut{
-        height: 300px;
-        padding: 20%;
+    .haut {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .bas{
-        height: 300px;
-        padding: 20% 27%;
+    .bas {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    .sac{
-        height: 300px;
-        padding: 20%;
+    .sac {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-
-    .elements{
-        padding: 0 5px;
-    }
+    
 }
+
