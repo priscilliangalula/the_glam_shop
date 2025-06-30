@@ -181,6 +181,10 @@ footer {
     flex-direction: column;
 }
 
+.application a {
+    text-decoration: none;
+}
+
 .application img {
     width: 3em;
     height: 3em;
